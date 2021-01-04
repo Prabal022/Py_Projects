@@ -5,7 +5,7 @@ conn = sqlite3.connect('dict_dbase.db')
 #creat Cursor
 cu = conn.cursor()
 
-#Create Table
+#Create Table for first time use
 
 #cu.execute("CREATE TABLE data_dict (word text, defination text)")
 
