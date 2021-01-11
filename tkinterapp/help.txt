@@ -1,0 +1,3 @@
+Book store GUI app wiht Tkinter app.
+Add, delete, update, view operation
+Backand PostGre SQL
