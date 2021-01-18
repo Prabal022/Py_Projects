@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+
+{% block body %} 
+
+<div class="main">
+
+    <script type="text/javascript" src={{cdn_js | safe}} ></script>
+    <br>
+    <div class="jumbotron">
+        <p>
+            attached grpah represents the stock market data for google during time fram b/w 01-Jan-2020 to 31-Oct-2020,
+            data taken extracted from yahoo.
+            *for practice only
+        </p>
+    </div>
+
+</div>
+
+{{script1 | safe}}
+{{div1 | safe}}
+
+{% endblock %}
+
