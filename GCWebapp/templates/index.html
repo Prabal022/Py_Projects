@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+    <title>Home</title>
+{% endblock %}
+
+
+{% block body %} 
+<br>
+<h2>Home Page</h2>
+<br>
+<main role="main">
+    <div class="jumbotron">
+      <h3>Upload file to Geo code address</h3>
+        <br>
+        <form action="{{ url_for('success_table') }}", method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="InputFile">Upload CSV file</label>
+            <input type="file" accept=".csv" name="file">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          </form>
+          <div class="output">
+            {{text | safe}}
+            </div>
+      </div>
+  </main>
+{% endblock %}
+
